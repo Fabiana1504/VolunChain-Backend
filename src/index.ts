@@ -5,7 +5,7 @@ import { prisma, dbMonitor } from "./config/prisma";
 import { SwaggerConfig } from "./config/swagger.config";
 import { redisClient } from "./config/redis";
 import cors from "cors";
-import { errorHandler } from "./shared/middleware/errorHandler";
+import { errorHandler } from "./middlewares/errorHandler";
 import { dbPerformanceMiddleware } from "./middlewares/dbPerformanceMiddleware";
 import { setupRateLimiting } from "./middleware/rateLimitMiddleware";
 import { cronManager } from "./utils/cron";
